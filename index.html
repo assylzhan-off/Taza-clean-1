@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Профессиональная химчистка мягкой мебели, стульев, диванов и матрасов в Астане. Для дома, кафе и офисов.">
+<title>Taza Clean — химчистка мебели и текстиля в Астане</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f9fa;--surface:#fff;--text:#0c2f36;--muted:#4a6a70;--accent:#0b7f86;--on-accent:#fff;--line:#d3e6e8;--tint:#e3f2f3;
+--body:"Onest",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;--head:"Unbounded","Onest",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1c20;--surface:#11292e;--text:#e4f3f4;--muted:#93b3b8;--accent:#4fd1d6;--on-accent:#04292c;--line:#20414a;--tint:#16343a}}
+:root[data-theme="dark"]{--bg:#0a1c20;--surface:#11292e;--text:#e4f3f4;--muted:#93b3b8;--accent:#4fd1d6;--on-accent:#04292c;--line:#20414a;--tint:#16343a}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px));-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:inherit}
+h1,h2,h3{font-family:var(--head);font-weight:500;line-height:1.15;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,6.4vw,3.6rem)}
+h2{font-size:clamp(1.5rem,4vw,2.2rem);margin-bottom:.6rem}
+h3{font-size:1.05rem;font-weight:600;margin-bottom:.4rem}
+p{margin:0 0 1rem}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+.lead{color:var(--muted);max-width:56ch}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.logo{font-family:var(--head);font-weight:600;font-size:1.1rem;text-decoration:none;margin-right:auto}
+nav{display:flex;gap:22px}
+nav a{text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a:hover{color:var(--text)}
+@media (max-width:760px){nav{display:none}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 22px;border-radius:999px;border:1.5px solid var(--accent);background:var(--accent);color:var(--on-accent);font:600 1rem var(--body);text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--text);border-color:var(--line)}
+.btn.sm{min-height:40px;padding:0 18px;font-size:.92rem}
+.btn:hover{filter:brightness(1.06)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.hero{padding-top:72px}
+.hero .grid{max-width:720px}
+.hero p.lead{margin:20px 0 28px;font-size:1.1rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;color:var(--muted);font-size:.95rem}
+.facts span::before{content:"✓ ";color:var(--accent);font-weight:700}
+/* before/after */
+.ba{position:relative;aspect-ratio:5/4;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:#2f8f96;--p:50%;touch-action:pan-y}
+.fab{position:absolute;inset:0;background:
+ radial-gradient(circle at 25% 30%,rgba(255,255,255,.16) 0 2px,transparent 3px) 0 0/34px 34px,
+ radial-gradient(circle at 75% 70%,rgba(255,255,255,.16) 0 2px,transparent 3px) 0 0/34px 34px,
+ linear-gradient(135deg,#2fa3aa,#1f7f87)}
+.fab.dirty{clip-path:inset(0 calc(100% - var(--p)) 0 0);filter:saturate(.45) brightness(.78);background:
+ radial-gradient(ellipse 70px 46px at 22% 34%,rgba(70,40,15,.7),transparent 70%),
+ radial-gradient(ellipse 50px 62px at 36% 72%,rgba(60,35,10,.6),transparent 70%),
+ radial-gradient(ellipse 36px 30px at 10% 80%,rgba(80,50,20,.55),transparent 70%),
+ radial-gradient(circle at 25% 30%,rgba(255,255,255,.12) 0 2px,transparent 3px) 0 0/34px 34px,
+ radial-gradient(circle at 75% 70%,rgba(255,255,255,.12) 0 2px,transparent 3px) 0 0/34px 34px,
+ linear-gradient(135deg,#2fa3aa,#1f7f87)}
+.tag{position:absolute;top:14px;padding:5px 12px;border-radius:999px;background:rgba(0,0,0,.55);color:#fff;font-size:.82rem;font-weight:500}
+.tag.l{left:14px}.tag.r{right:14px}
+.bar{position:absolute;top:0;bottom:0;left:var(--p);width:3px;margin-left:-1.5px;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+.bar::after{content:"↔";position:absolute;top:50%;left:50%;width:42px;height:42px;margin:-21px;border-radius:50%;background:#fff;color:#0c2f36;display:grid;place-items:center;font-size:1.1rem;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba:focus-within{outline:3px solid var(--accent);outline-offset:3px}
+/* services */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+@media (max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.cards{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card .ic{font-size:1.7rem;display:block;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.95rem;margin-bottom:12px}
+.price{font-weight:600;font-size:.95rem;color:var(--accent)}
+/* business */
+.biz{background:var(--tint);border-block:1px solid var(--line)}
+.biz .grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+@media (max-width:820px){.biz .grid{grid-template-columns:1fr}}
+.list{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.list li{padding-left:34px;position:relative}
+.list li::before{content:"✓";position:absolute;left:0;top:2px;width:24px;height:24px;border-radius:50%;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;font-size:.8rem;font-weight:700}
+.list b{display:block}
+.list span{color:var(--muted);font-size:.95rem}
+/* steps */
+ol.steps{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
+@media (max-width:760px){ol.steps{grid-template-columns:1fr}}
+ol.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+ol.steps li::before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--on-accent);font:600 .95rem var(--head);margin-bottom:12px}
+ol.steps p{color:var(--muted);font-size:.95rem;margin:0}
+/* form */
+.form{max-width:640px;background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:26px;margin-top:24px}
+label{display:block;font-weight:500;font-size:.92rem;margin:0 0 6px}
+.f{margin-bottom:16px}
+input[type=text],select{width:100%;min-height:46px;padding:0 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--text);font:400 1rem var(--body)}
+.hint{color:var(--muted);font-size:.85rem;margin:12px 0 0}
+/* faq */
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.4rem;line-height:1;color:var(--accent);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin:10px 0 0;max-width:62ch}
+.end{text-align:center}
+.end .lead{margin:0 auto 24px}
+footer{border-top:1px solid var(--line);padding:28px 0 96px;color:var(--muted);font-size:.92rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+footer a{text-decoration:none}
+.float{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:12;box-shadow:0 6px 20px rgba(0,0,0,.28)}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="logo" href="#top">tazaclean</a>
+<nav><a href="#services">Услуги</a><a href="#business">Для бизнеса</a><a href="#how">Как работаем</a><a href="#faq">Вопросы</a></nav>
+<a class="btn sm" data-msg="Здравствуйте! Хочу узнать стоимость химчистки мебели." href="https://wa.me/77024723585" target="_blank" rel="noopener">Написать в WhatsApp</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap grid">
+<div>
+<h1>Вернём мебели свежий вид</h1>
+<p class="lead">Химчистка диванов, кресел, стульев и матрасов в Астане. Приезжаем домой, в кофейню или офис — мебель никуда возить не нужно.</p>
+<div class="cta">
+<a class="btn" data-msg="Здравствуйте! Хочу рассчитать стоимость химчистки мебели." href="https://wa.me/77024723585" target="_blank" rel="noopener">Рассчитать стоимость</a>
+<a class="btn ghost" href="#services">Посмотреть услуги</a>
+</div>
+<div class="facts"><span>Выезд по записи</span><span>Смета до начала работ</span><span>Для дома и бизнеса</span></div>
+</div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2>Что будем чистить?</h2>
+<p class="lead">Цена зависит от размера мебели, ткани и степени загрязнения. Точную стоимость назовём по фото.</p>
+<div class="cards">
+<div class="card"><span class="ic">🛋️</span><h3>Диваны</h3><p>Сиденья, спинки и подлокотники.</p><span class="price">Цена — по фото</span></div>
+<div class="card"><span class="ic">🪑</span><h3>Стулья и кресла</h3><p>Для обеденных зон, переговорных и рабочих мест.</p><span class="price">Цена — по фото</span></div>
+<div class="card"><span class="ic">🛏️</span><h3>Матрасы</h3><p>Поверхность и локальные бытовые загрязнения.</p><span class="price">Цена — по фото</span></div>
+<div class="card"><span class="ic">☕</span><h3>Банкетки и мягкие зоны</h3><p>Для кофеен, ресторанов и салонов.</p><span class="price">Цена — по фото</span></div>
+</div>
+</div></section>
+
+<section id="business" class="biz"><div class="wrap grid">
+<div>
+<h2>Чистая мебель — комфорт для гостей</h2>
+<p class="lead">Работаем с кофейнями, ресторанами, офисами, салонами и другими коммерческими пространствами. Можем приехать вне часов пик, чтобы не мешать работе.</p>
+<a class="btn" data-msg="Здравствуйте! Интересует корпоративная химчистка мягкой мебели." href="https://wa.me/77024723585" target="_blank" rel="noopener">Запросить расчёт для бизнеса</a>
+</div>
+<ul class="list">
+<li><b>Расчёт по фото и объёму</b><span>Оценим количество мебели и формат работ.</span></li>
+<li><b>Время по вашему графику</b><span>Подберём окно с учётом работы заведения.</span></li>
+<li><b>Работа по согласованной смете</b><span>Заранее уточним состав работ, сроки и итоговую стоимость.</span></li>
+<li><b>Регулярное обслуживание</b><span>При необходимости обсудим график повторной чистки.</span></li>
+</ul>
+</div></section>
+
+<section id="how"><div class="wrap">
+<h2>Всего три шага</h2>
+<p class="lead">Без сложных заявок: начинаем с фото и короткого разговора.</p>
+<ol class="steps">
+<li><h3>Отправляете фото</h3><p>Покажите мебель, количество предметов и сложные пятна, если они есть.</p></li>
+<li><h3>Согласуем цену и время</h3><p>Уточним детали, доступ к помещению и примерную продолжительность работ.</p></li>
+<li><h3>Проводим чистку</h3><p>Выполняем согласованный объём, проверяем результат и подсказываем, как правильно сушить.</p></li>
+</ol>
+</div></section>
+
+<section id="request" class="biz"><div class="wrap">
+<h2>Узнайте стоимость для вашей мебели</h2>
+<p class="lead">Заполните поля — кнопка подготовит сообщение в WhatsApp. Фото можно приложить прямо в чате.</p>
+<div class="form">
+<div class="f"><label for="t">Где нужна чистка</label>
+<select id="t"><option>Кофейня / ресторан</option><option>Офис / коммерческое помещение</option><option>Квартира / дом</option><option>Другое</option></select></div>
+<div class="f"><label for="m">Что чистим и сколько предметов</label><input type="text" id="m" placeholder="Например: 2 дивана и 12 стульев"></div>
+<div class="f"><label for="a">Район или адрес</label><input type="text" id="a" placeholder="Например: левый берег, Есиль"></div>
+<button class="btn" id="send" type="button">Получить расчёт в WhatsApp</button>
+<p class="hint">Данные не сохраняются на сайте: они только попадают в текст сообщения.</p>
+</div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+<h2>Частые вопросы</h2>
+<p class="lead">Если мебель нестандартная или пятна особенные, лучше прислать фото заранее.</p>
+<div style="margin-top:20px;max-width:760px">
+<details><summary>Сколько времени занимает химчистка?</summary><p>Зависит от количества предметов, материала и загрязнений. Продолжительность работ и примерное время высыхания согласуем до заказа.</p></details>
+<details><summary>Можно ли заказать химчистку для кофейни?</summary><p>Да. Рассчитаем стулья, диваны, кресла и банкетки. Пришлите фото и количество предметов.</p></details>
+<details><summary>Удаляются ли все пятна?</summary><p>Гарантировать удаление каждого пятна нельзя. Результат зависит от типа загрязнения, ткани, давности пятна и прежних попыток очистки.</p></details>
+<details><summary>Нужно ли куда-то везти мебель?</summary><p>Нет, мы работаем на выезде: обрабатываем мебель на месте, если это позволяют помещение и тип изделия.</p></details>
+<details><summary>Как быстро можно записаться?</summary><p>Напишите в WhatsApp и укажите адрес, объём работ и желаемое время. Дату подтвердим после согласования условий.</p></details>
+</div>
+</div></section>
+
+<section class="end"><div class="wrap">
+<h2>Готовы освежить мебель?</h2>
+<p class="lead">Пришлите фото — обсудим объём и подготовим расчёт.</p>
+<a class="btn" data-msg="Здравствуйте! Хочу узнать стоимость химчистки мебели." href="https://wa.me/77024723585" target="_blank" rel="noopener">Написать в WhatsApp</a>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<span>© Taza Clean — химчистка мягкой мебели, Астана</span>
+<a href="https://wa.me/77024723585" data-msg="Здравствуйте! Хочу узнать стоимость химчистки мебели." target="_blank" rel="noopener">WhatsApp: +7 702 472 35 85</a>
+</div></footer>
+
+<a class="btn float" data-msg="Здравствуйте! Хочу узнать стоимость химчистки мебели." href="https://wa.me/77024723585" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">WhatsApp</a>
+
+<script>
+(function(){
+  var PHONE='77024723585';
+  function link(t){return 'https://wa.me/'+PHONE+'?text='+encodeURIComponent(t);}
+  document.querySelectorAll('[data-msg]').forEach(function(a){a.href=link(a.getAttribute('data-msg'));});
+  document.getElementById('send').addEventListener('click',function(){
+    var t=document.getElementById('t').value,
+        m=document.getElementById('m').value.trim(),
+        a=document.getElementById('a').value.trim();
+    var msg='Здравствуйте! Хочу рассчитать стоимость химчистки. Объект: '+t+'.';
+    if(m)msg+=' Мебель: '+m+'.';
+    if(a)msg+=' Район: '+a+'.';
+    window.open(link(msg),'_blank','noopener');
+  });
+})();
+</script>
+</body>
+</html>
